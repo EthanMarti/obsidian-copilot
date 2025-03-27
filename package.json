@@ -5,10 +5,10 @@
   "main": "main.js",
   "scripts": {
     "dev": "npm-run-all --parallel dev:*",
-    "dev:tailwind": "npx tailwindcss -i src/styles/tailwind.css -o styles.css --watch",
+    "dev:tailwind": "npx tailwindcss -i src/styles/tailwind.css -o F:/Obsidian/云端仓库/.obsidian/plugins/obsidian-copilot/styles.css --watch",
     "dev:esbuild": "node esbuild.config.mjs",
     "build": "npm run build:tailwind && npm run build:esbuild || exit 1",
-    "build:tailwind": "npx tailwindcss -i src/styles/tailwind.css -o styles.css --minify",
+    "build:tailwind": "npx tailwindcss -i src/styles/tailwind.css -o public/styles.css --minify",
     "build:esbuild": "tsc -noEmit -skipLibCheck && node esbuild.config.mjs production",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
@@ -114,6 +114,7 @@
     "langchain": "^0.3.2",
     "lucide-react": "^0.462.0",
     "luxon": "^3.5.0",
+    "moment": "^2.30.1",
     "next-i18next": "^13.2.2",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
@@ -123,6 +124,7 @@
     "react-syntax-highlighter": "^15.5.0",
     "sse": "github:mpetazzoni/sse.js",
     "tailwind-merge": "^2.5.5",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "zod": "^3.24.2"
   }
 }

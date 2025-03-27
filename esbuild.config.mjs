@@ -37,7 +37,7 @@ const context = await esbuild.context({
   logLevel: "info",
   sourcemap: prod ? false : "inline",
   treeShaking: true,
-  outfile: "main.js",
+  outfile: "F:/Obsidian/云端仓库/.obsidian/plugins/obsidian-copilot/main.js",
   plugins: [svgPlugin(), wasmPlugin],
   define: {
     global: "window",
